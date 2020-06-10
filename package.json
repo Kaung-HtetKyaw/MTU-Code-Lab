@@ -1,12 +1,12 @@
 {
-  "name": "blog",
-  "author": "Loris Leiva",
-  "description": "Personal website and blog",
+  "name": "mtucodelab",
+  "author": "MTU Code Lab",
+  "description": "Learning resources on various Tech topics",
   "version": "0.1.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lorisleiva/blog.git"
+    "url": "https://github.com/Kaung-HtetKyaw/MTU-Code-Lab.git"
   },
   "keywords": [
     "laravel",

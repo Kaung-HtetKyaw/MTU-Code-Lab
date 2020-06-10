@@ -2,7 +2,7 @@
 permalink: vue-3
 image: https://miro.medium.com/max/1400/1*YC2PHpxV4rh6G3i6qPHZ-g.png
 description: I explain my motivations for writing Laravel Actions and provide a small refactoring example.
-tags: ["Vue", "Javascript", "Framework"]
+tags: ["Vue","Javascript","Framework"]
 date: 2020-06-10T14:00:00Z
 ---
 

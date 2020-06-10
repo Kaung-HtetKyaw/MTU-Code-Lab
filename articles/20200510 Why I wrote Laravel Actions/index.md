@@ -1,15 +1,17 @@
 ---
-permalink: why-i-wrote-laravel-actions
-image: /covers/why-i-wrote-laravel-actions.png
+permalink: vue-3
+image: https://miro.medium.com/max/1400/1*YC2PHpxV4rh6G3i6qPHZ-g.png
 description: I explain my motivations for writing Laravel Actions and provide a small refactoring example.
-tags: ['Laravel', 'Open Source']
-date: 2020-05-10T14:00:00Z
+tags: ["Vue", "Javascript", "Framework"]
+date: 2020-06-10T14:00:00Z
 ---
 
-# Why I wrote Laravel Actions
+# Vue 3
+
 As I recently released version 1.0 of Laravel Actions, I thought I’d write a little article explaining my motivations for developing this package.
 
 ## An unintuitive structure
+
 I absolutely love the Laravel Framework. It enables me to go from idea to prototype very quickly whilst being able to scale if whatever I’m building turns out to have some sort of traction.
 
 BUT. (Big but.)
@@ -17,10 +19,11 @@ BUT. (Big but.)
 But when organising all my classes within the app directory, I often find myself having to look into various places to find similar pieces of logic.
 
 Say you have an `ArticleController` on your blog and you’re writing an endpoint for updating an article. Then you’ll very likely have to:
-* Define a new route in your `routes/web.php` file.
-* Create an `UpdateArticleRequest` class in the `app/Http/Requests` directory to define your validation logic.
-* Add a new method in your `app/Policies/ArticlePolicy` class to define your authorisation logic.
-* Finally, write your main logic in the `update` method of your `ArticleController` amongst other methods that manages other aspects of your `Article` model.
+
+- Define a new route in your `routes/web.php` file.
+- Create an `UpdateArticleRequest` class in the `app/Http/Requests` directory to define your validation logic.
+- Add a new method in your `app/Policies/ArticlePolicy` class to define your authorisation logic.
+- Finally, write your main logic in the `update` method of your `ArticleController` amongst other methods that manages other aspects of your `Article` model.
 
 Phew...
 
@@ -31,6 +34,7 @@ When you visit a new house you don’t think: “okay, this house has a total of
 This is how I’d like to visit my application’s code too. Not as a set of web application patterns but as a set of features it provides grouped in a way that makes sense to my domain.
 
 ## Not quite Domain-Driven
+
 Now if you know a bit about Domain Driven Design (DDD), you will understand that using DDD principles in a Laravel application is not a trivial task — [I did try though](https://lorisleiva.com/conciliating-laravel-and-ddd/).
 
 You cannot have both an opinionated framework that gives you super powers and enables you to create a working prototype in a few days AND a neutral framework that encourages you to define your own domain-driven architecture.
@@ -42,6 +46,7 @@ Here is my point: DDD is a philosophy. You might not agree with everything and y
 So, how can we reach a more intuitive structure (closer to our domain) whilst carrying on using our beloved Laravel framework and all the amazing features that comes with it?
 
 ## A beautiful compromise
+
 If you’ve spent a bit of time developing a frontend using VueJS, you might be familiar with Single-File Components. They are simple `.vue` files that wraps all you need to design a piece of UI. That is the HTML, the CSS and the JavaScript (or any modern alternatives of these languages).
 
 That organisation system makes total sense to me. If later on I need to adjust the design and/or the behaviour of a dropdown menu, it’s all in one place. Furthermore, components can be re-used within components so you can elegantly abstract common logic.
@@ -55,6 +60,7 @@ Laravel Actions aims to bring that concept into the Laravel framework. Whilst in
 Actions provide a more intuitive structure that focuses on your domain whilst embracing the features of the framework it relies upon.
 
 ## A new unit of life
+
 You might have been using a similar concept already in your applications. Lots of articles (e.g. from [Michael Dyrynda](https://dyrynda.com.au/blog/single-action-controllers-in-laravel) or [Dries Vints](https://driesvints.com/blog/the-beauty-of-single-action-controllers/)) are talking about the benefits of only using invokable controllers, i.e. defining each endpoint in a dedicated class.
 
 This is a good first step as it allows you to organise your controllers more intuitively.
@@ -64,10 +70,11 @@ However, you are still likely going to write your authorisation and/or validatio
 And what about common logic shared between controllers, between jobs, between controllers and jobs, etc? Have you ever shamefully googled “how to call a controller from a controller?”? In the end, that responsibility tends to be delegated to Models which make them unmaintainable god-like objects.
 
 With Laravel Actions,
-* Actions take care of a single task.
-* Actions are responsible for their own authorisation, validation and execution.
-* Actions can be reused within other Actions to provide a lower granularity of logic.
-* Actions can be executed as controllers, event listeners, jobs, console commands or simple objects.
+
+- Actions take care of a single task.
+- Actions are responsible for their own authorisation, validation and execution.
+- Actions can be reused within other Actions to provide a lower granularity of logic.
+- Actions can be executed as controllers, event listeners, jobs, console commands or simple objects.
 
 ```php
 # As controllers
@@ -91,11 +98,12 @@ new CreateNewArticle(['title' => 'My new article']);
 Therefore, just like Single-File Components in VueJS, we end up with a big set of Actions that almost entirely define our backend. And it is up to us to organise them intuitively.
 
 ## A small refactoring example
+
 Before I wrap up this article, I thought I’d go through a quick refactoring so you can judge for yourself if this is a more intuitive way to organise your backend.
 
 ### Before
 
-Let’s take the example of a small CRM application. `Users` can connect and manage their `Leads` that can be associated with `Opportunities`. 
+Let’s take the example of a small CRM application. `Users` can connect and manage their `Leads` that can be associated with `Opportunities`.
 
 To add some extra complexity to our example, let’s say `Opportunities` are automatically updated based on some third party integrations. We’ll use two fictional integrations: MarketGuru (compares the opportunity with the rest of the market) and PersonalityOracle (uses psychology to determine the likelihood of the opportunity).
 
@@ -207,18 +215,19 @@ First of all, how eloquent is that? A new developer joining the project can look
 If you read back the points 3, 4 and 5 from the "Before" section, you wouldn’t have been able to guess them without opening the files and reading the code. Now, most of the domain logic is obvious.
 
 Note that:
-* We no longer need `App\Listeners\MarkLeadAsCustomer` and `App\Listeners\MarkLeadAsLost` since we can use `App\Actions\Lead\MarkLeadAsCustomer` and `App\Actions\Lead\MarkLeadAsLost` instead.
-* We no longer need `MakeLeadCommand` and `MakeOpportunityCommand` since we can simply use the `CreateNewLead` and `CreateNewOpportunityForLead` actions as commands instead.
-* We no longer need Request classes.
-* We no longer need Policy classes.
-* We no longer need Controllers except maybe for the `Auth/` folder if you want to reuse what Laravel provides out-of-the-box (I might translate these into Actions in the near future).
-* Each integration now has its own folder regrouping its actions but also its HTTP client.
-* The job `UpdateOpportunitiesFromThirdPartyIntegrations` is now an action that calls the `UpdateOpportunity` actions from every integration.
-* The `BulkRemoveLead` action makes use of the `RemoveLead` action.
-* The `UpdateUserSettings` delegates to the `UpdateUserDetails`, `UpdateUserAvatar`, `UpdateUserPassword` and/or `UpdateEmailPreferences` actions based on the attributes provided.
-* What was previously `OpportunityController@index` has been separated into two actions: `ListOpportunitiesForLead` and `ListAllActiveOpportunitiesForUser`.
-* You can run any of these actions as plain objects in your tests.
-* You can use the exact same folder structure in your tests.
+
+- We no longer need `App\Listeners\MarkLeadAsCustomer` and `App\Listeners\MarkLeadAsLost` since we can use `App\Actions\Lead\MarkLeadAsCustomer` and `App\Actions\Lead\MarkLeadAsLost` instead.
+- We no longer need `MakeLeadCommand` and `MakeOpportunityCommand` since we can simply use the `CreateNewLead` and `CreateNewOpportunityForLead` actions as commands instead.
+- We no longer need Request classes.
+- We no longer need Policy classes.
+- We no longer need Controllers except maybe for the `Auth/` folder if you want to reuse what Laravel provides out-of-the-box (I might translate these into Actions in the near future).
+- Each integration now has its own folder regrouping its actions but also its HTTP client.
+- The job `UpdateOpportunitiesFromThirdPartyIntegrations` is now an action that calls the `UpdateOpportunity` actions from every integration.
+- The `BulkRemoveLead` action makes use of the `RemoveLead` action.
+- The `UpdateUserSettings` delegates to the `UpdateUserDetails`, `UpdateUserAvatar`, `UpdateUserPassword` and/or `UpdateEmailPreferences` actions based on the attributes provided.
+- What was previously `OpportunityController@index` has been separated into two actions: `ListOpportunitiesForLead` and `ListAllActiveOpportunitiesForUser`.
+- You can run any of these actions as plain objects in your tests.
+- You can use the exact same folder structure in your tests.
 
 ```
 tests/
@@ -233,6 +242,7 @@ tests/
 ```
 
 ## Conclusion
+
 Laravel Actions has been released almost exactly one year ago and I’m so excited to have finally released it as a version 1.0. I hope this article helps understanding the rationales behind this package and I’m looking forward to getting more feedback from the community which has already been instrumental during this entire year.
 
 <GithubButton url="https://github.com/lorisleiva/laravel-actions" title="Laravel Actions on GitHub"></GithubButton>
