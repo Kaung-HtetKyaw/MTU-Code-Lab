@@ -18,11 +18,10 @@ tags: ["Javascript", "Memory Management"]
 <br>
 <br >
 Every front-end developer, even those at [OutSystems](https://www.outsystems.com/?utm_source=medium&utm_medium=top_of_article&utm_content=Beyond%20Memory%20Leaks%20in%20JavaScript&utm_campaign=blog), has faced JavaScript memory leaks one time or another. In this regard,
-
-1. There are three types of developers:
-   The Savvy: Those who knew what they were dealing with and solved the issue.
-   The Aware: Those who knew what they were dealing with but had no idea how to solve the issue.
-   The Oblivious: Those who didn’t even realize there was a problem, to start with.
+There are three types of developers:
+1. The Savvy: Those who knew what they were dealing with and solved the issue.
+2. The Aware: Those who knew what they were dealing with but had no idea how to solve the issue.
+3. The Oblivious: Those who didn’t even realize there was a problem, to start with.
 
 With this in mind, we have compiled a few guidelines to help those #3s leave the comfort of their oblivion and help #2s delve a little deeper. And, you never know, but those clever #1s may also enjoy, and hopefully endorse, some of these tips. We’re open for discussion, too. We’ve got treats for everyone!
 TL; DR: If you want to know where to start regarding those dreadful JavaScript memory leaks, you’ve come to the right place.
