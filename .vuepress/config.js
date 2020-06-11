@@ -1,12 +1,12 @@
 module.exports = {
   title: "MTU C0de Lab",
   themeConfig: {
-    domain: "https://lorisleiva.com",
+    domain: "https://mtu-code-lab.netlify.app/",
     repo: "https://github.com/lorisleiva/blog",
     nav: ["/", "/tag/", "/articles/"],
     author: {
-      name: "Loris Leiva",
-      twitter: "@lorismatic",
+      name: "MTU Code Lab",
+      facebook: "MTU Code Lab",
     },
     articlesPerPage: 11,
     minimumFeaturedArticles: 11,
