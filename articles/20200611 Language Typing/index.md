@@ -1,5 +1,5 @@
 ---
-permalink: basic-knowledge-5
+permalink: Language Typing
 image: https://pics.me.me/when-you-mistype-a-keyword-in-c-static-cat-dynamic-43065103.png
 description: အများစုက Dynamic programming language တွေက လေ့လာရတာပိုလွယ်တယ်လို.ထင်ကြတယ်။ ဥပမာ JavaScript, PHP, Python အစရှိတာတွေပေါ့ တကယ်တမ်းက application ရေးဖို.လောက်ဆိုရင် အသုံးပြုဖို.လောက်ဆိုရင်တော့ လွယ်ပေမဲ့ တကယ်တမ်း language semantic ကိုနားလည်ဖို.ကျ ထင်သလောက်မလွယ်တော့ဘူး။ ဆိုချင်တာက သုံးတတ်အောင် ဖို.လောက်သင်တာ နားလည်ရလွယ်တယ် ဒါပေမဲ့ တကယ် ထဲထဲဝင်ဝင်သိအောင်သင်ပြီဆိုရင် နားလည်ဖို.ကခက်တယ်။ 
 tags: ["Programming","Static","Dynamic","Javascript"]
