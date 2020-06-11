@@ -56,7 +56,7 @@ export default {
         (a.frontmatter.tags || []).some(tag => tags.includes(tag))
       );
 
-      return randomElements(excludePages(relatedArticles, [this.$page]));
+      return randomElements(excludePages(relatedArticles, [this.$page]), 2);
     }
   }
 };
