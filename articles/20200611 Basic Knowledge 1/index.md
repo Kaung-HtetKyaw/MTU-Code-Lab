@@ -3,22 +3,22 @@ permalink: basic-knowledge-1
 image: https://s3-us-west-2.amazonaws.com/robogarden-new/Articles/upload/blogs/lg-leverage-of-coding.jpg
 description: Programming ကိုလုံးဝမသိသေးသော junior များအတွက်သာရည်ရွယ်ပါတယ် 
 tags: ["Basic Knowledge","Programming"]
-date: 2020-06-11T13:00:00Z
+date: 2020-06-11T14:00:00+6:30
 ---
 
 #    Basic Knowledge I
 
-> **Programming** ဆိုတာဘာလဲ ?
-> **Code** ဆိုတာဘာလဲ ?
+> Programming ဆိုတာဘာလဲ ?
+> Code ဆိုတာဘာလဲ ?
 
 
-`Programming` လိုပြောရင် အရင်ဆုံး `program` ဆိုတာဘာလဲဆိုတာကိုအရင်သိမှရမယ်
+**Programming** လိုပြောရင် အရင်ဆုံး **program** ဆိုတာဘာလဲဆိုတာကိုအရင်သိမှရမယ်
 
 ## အဲ့တော့ program ဆိုတာဘာလဲ ?
 
-`Program` ဆိုတာက  a representation of an algorithm ပဲ အဲ့တော့ algorithm ဆိုတာကိုနားလည်ဖို့ပြီ
+**Program** ဆိုတာက  a representation of an algorithm ပဲ အဲ့တော့ algorithm ဆိုတာကိုနားလည်ဖို့ပြီ
 
-`Algorithm` ဆိုတာက a set of instructions ခိုင်းစေချက်တွေစုထားတဲ့အရာ ဘာကိုခိုင်းစေတာလဲဆိုတော့ machine ကိုခိုင်းစေတာတစ်နည်းအားဖြင့် computer ကိုဆိုလိုတာပါ
+**Algorithm** ဆိုတာက a set of instructions ခိုင်းစေချက်တွေစုထားတဲ့အရာ ဘာကိုခိုင်းစေတာလဲဆိုတော့ machine ကိုခိုင်းစေတာတစ်နည်းအားဖြင့် computer ကိုဆိုလိုတာပါ
 
 **ဥပမာ**
 ထမင်းချက်မယ်ဆိုတဲ့ algorithm တစ်ခု ကို overview အနေနဲ့ရေးကြည့်မယ်
@@ -43,6 +43,5 @@ Program ကြတော့ အဲ့လိုalgorithm တွေကို machin
 
 Programming လို့ပြောရင်နောက်မှာ `language` ဆိုတဲ့စကားလုံးပါတယ် `language` ဆိုတာ တစ်ဦးနဲ့တစ်ဦး ဆက်သွယ်ဖို့ကြားခံပေးတဲ့အရာပဲလွယ်လွယ်ပြောရရင် အဲ့တော့ `Programming Language` ဆိုတော့ `program` တွေ ကို machine နဲ့ human ကြားမှာ ဆက်သွယ်ပေးတဲ့အရာပေါ့
 
-`Code` ဆိုတာကြ programming language တွေကိုmachine ( computer )မှာရေးတဲ့အခါသုံးတဲ့စကားလုံးတွေကိုဆိုလိုတာပါပဲ
-
+Code ဆိုတာကြ programming language တွေကိုmachine ( computer )မှာရေးတဲ့အခါသုံးတဲ့စကားလုံးတွေကိုဆိုလိုတာပါပဲ
 ဒီလောက်ဆိုနားလည်ပြီထင်ပါတယ်
