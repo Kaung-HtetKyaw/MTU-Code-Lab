@@ -1,5 +1,5 @@
 ---
-permalink: Language-Typing
+permalink: github-for-beginners
 image: https://scontent.fmdl1-2.fna.fbcdn.net/v/t1.0-0/p526x296/97064979_979877519097663_4925847470082097152_o.jpg?_nc_cat=106&_nc_sid=825194&_nc_eui2=AeFL614l9ML86cQPIexJ7eRBNos52rm-oJA2iznaub6gkEnCxa5C_R17GRcvKG3o-VLSRRMW-moDjeymQvwZx7YU&_nc_ohc=oYFZCkUSbuIAX_lX4ln&_nc_ht=scontent.fmdl1-2.fna&_nc_tp=6&oh=cb2e1e623e0afde8b84373a6ead3700e&oe=5F07CD8A
 description: ကျနော်တို့ github ကနေရည်းစားစာတစောင် စုရေးကြမယ်ဆိုပါစို့။
 tags: ["Git", "GitHub"]
