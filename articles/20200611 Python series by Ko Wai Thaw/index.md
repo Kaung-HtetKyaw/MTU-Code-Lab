@@ -1,6 +1,6 @@
 ---
 permalink: python-series-3
-image: https://s3-us-west-2.amazonaws.com/robogarden-new/Articles/upload/blogs/lg-leverage-of-coding.jpg
+image: https://datawider.com/wp-content/uploads/2019/11/How-to-Learn-Python.jpg
 description: Python Series 3(on Going)
 tags: ["Python"]
 date: 2020-06-11T14:10:00+6:30
