@@ -15,19 +15,19 @@ date: 2020-06-13T20:30:00+6:30
 Free Online Courses ၄ ခုကို
 ဒီမှာစုပေးထားတယ်
 
-# Coursera
+## Coursera
 
 1. [Introduction to Machine Learning](https://www.coursera.org/learn/machine-learning)
 2. [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
 
-# Udacity
+## Udacity
 
 [https://www.udacity.com/course/intro-to-machine-learning--ud120](https://www.udacity.com/course/intro-to-machine-learning--ud120)
 
-# GoogleAI
+## GoogleAI
 
 [https://ai.google/education/](https://ai.google/education/)
 
-# edX
+## edX
 
 [https://www.edx.org/course/machine-learning](https://www.edx.org/course/machine-learning)
