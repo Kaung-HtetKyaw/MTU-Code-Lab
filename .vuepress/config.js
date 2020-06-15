@@ -1,7 +1,7 @@
 module.exports = {
   title: "MTU C0de Lab",
   themeConfig: {
-    domain: "https://mtu-code-lab.netlify.app/",
+    domain: "https://mtucodelab.netlify.app/",
     repo: "https://github.com/lorisleiva/blog",
     nav: ["/", "/tag/", "/articles/"],
     author: {
@@ -74,7 +74,7 @@ module.exports = {
       {
         rel: "apple-touch-icon",
         sizes: "152x152",
-        href: "/apple-icon-152x152.png",
+        href: "/favicon.png",
       },
     ],
     [
@@ -82,7 +82,7 @@ module.exports = {
       {
         rel: "apple-touch-icon",
         sizes: "180x180",
-        href: "/apple-icon-180x180.png",
+        href: "/favicon.png",
       },
     ],
     [
@@ -91,7 +91,7 @@ module.exports = {
         rel: "icon",
         type: "image/png",
         sizes: "192x192",
-        href: "/android-icon-192x192.png",
+        href: "/favicon.png",
       },
     ],
     [
@@ -100,7 +100,7 @@ module.exports = {
         rel: "icon",
         type: "image/png",
         sizes: "32x32",
-        href: "/favicon-32x32.png",
+        href: "/favicon.png",
       },
     ],
     [
@@ -109,7 +109,7 @@ module.exports = {
         rel: "icon",
         type: "image/png",
         sizes: "96x96",
-        href: "/favicon-96x96.png",
+        href: "/favicon.png",
       },
     ],
     [
@@ -118,7 +118,7 @@ module.exports = {
         rel: "icon",
         type: "image/png",
         sizes: "16x16",
-        href: "/favicon-16x16.png",
+        href: "/favicon.png",
       },
     ],
     ["link", { rel: "manifest", href: "/manifest.json" }],
