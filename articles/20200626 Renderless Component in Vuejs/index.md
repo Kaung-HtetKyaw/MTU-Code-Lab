@@ -3,7 +3,7 @@ permalink: vue-renderless-component
 image: https://i.ytimg.com/vi/6cn3xyK4Alk/maxresdefault.jpg
 description: Renderless component ဆိူတာ သူ့ကိုယ်ပိုင် HTML render မလုပ်တဲ့ component မျိူး
 tags: ["Vue", "Renderless Component"]
-date: 2020-06-26T20:30:00+6:30
+date: 2020-06-30T9:00:00+6:30
 ---
 
 # Vue မှာ Renderless component တစ်ခုဘလို create လုပ်မလဲ?
