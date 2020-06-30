@@ -35,6 +35,10 @@ export default {
   },
   methods: {
     classesFor(tag) {
+      if (tag.name === "React" || tag.name === "Redux")
+        return "bg-react text-white";
+      if (tag.name === "Git") return "bg-git text-white";
+
       if (tag.name === "Laravel") return "bg-topaz text-white";
       if (tag.name === "Tailwind") return "bg-river text-white";
       if (tag.name === "Javascript") return "bg-banana text-white";

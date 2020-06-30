@@ -32,6 +32,9 @@ module.exports = {
 
     gradients: (theme) => ({
       purple: ["30deg", "#474A8A", "#787CB5"],
+      react: ["30deg", "#61DBFB", "#61DBFB"],
+      git: ["30deg", "#F1502F", "#F1502F"],
+      dart: ["30deg", "#0075BA", "#00A758"],
       banana: ["30deg", " #FFDD00", "#FBB034"],
       topaz: ["30deg", "#EE7752", "#E73C7E"],
       river: ["30deg", "#23A6D5", "#23D5AB"],
