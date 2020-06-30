@@ -87,6 +87,7 @@ json-server --watch db.json
 
 ပြီးရင် `src/components` folder ထဲမှာ ကြိုက်တဲ့ နာမည်နဲ့ component တစ်ခု create လုပ်လိုက်ပါ
 
+
 ```javascript
 //src/components/data-model-crud.vue
 <script>
@@ -183,9 +184,11 @@ export default {
 </script>
 ```
 
+အ ေပါ်က component မှာ ကြည့်လိုက်ရင် markup လုံး၀ မပါတာကို ေတွ့ရပါလိမ့်မယ်
+
 ![Dizzy](https://img.devrant.com/devrant/rant/r_462432_ZzKQZ.gif)
 
-post fetchပြီး ရလာတဲ့ေကာင် ေတွကို list အ ေနနဲ့ render ပြန်လုပ်ပါ့မယ်
+data-model-crud componentကို ပြီး post fetchလို့ ရလာတဲ့ေကာင် ေတွကို list အ ေနနဲ့ render ပြန်လုပ်ပါ့မယ်
 
 ```html
 <template>
