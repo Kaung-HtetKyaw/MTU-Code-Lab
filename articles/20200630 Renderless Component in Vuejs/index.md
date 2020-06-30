@@ -362,7 +362,9 @@ export default router;
 ဒီ Article မှာ scoped slot ရဲ့ အသုံး၀င်နိုင်တဲ့ use case တစ်ခုကိုပဲ ေပြာပြထားပါတယ်
 <br>
 scoped slot ေတွအ ေကြာင်း ဖတ်ချင်ရင် [ဒီdocumentataion](https://vuejs.org/v2/guide/components-slots.html) မှာ သွားဖတ်လို့ရပါတယ်
+
 <br>
-project folder လိုချင်ရင် [ဒီRepository](https://github.com/Kaung-HtetKyaw/vue-renderless-example.git) မှာ သွားယူနိုင်ပါတယ်
+
+<GithubButton url="https://github.com/Kaung-HtetKyaw/vue-renderless-example.git"></GithubButton>
 
 ![thank you](https://gif-finder.com/wp-content/uploads/2018/06/Keegan-Michael-Key-Thank-you.gif)
