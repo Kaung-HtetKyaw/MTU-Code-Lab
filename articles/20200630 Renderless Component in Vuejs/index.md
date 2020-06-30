@@ -2,7 +2,7 @@
 permalink: vue-renderless-component
 image: https://i.ytimg.com/vi/6cn3xyK4Alk/maxresdefault.jpg
 description: Renderless component ဆိူတာ သူ့ကိုယ်ပိုင် HTML render မလုပ်တဲ့ component မျိူး
-tags: ["Vue", "Renderless Component"]
+tags: ["Vue", "Javascript"]
 date: 2020-06-30T9:00:00+6:30
 ---
 
@@ -86,7 +86,6 @@ json-server --watch db.json
 `http://localhost:3000/posts` ဆိုတဲ့ url ကိုသွားလိုက်ရင် JSON object ေတွပါတဲ့ Array တစ်ခုကို ေတွ့ပါလိမ့်မယ်
 
 ပြီးရင် `src/components` folder ထဲမှာ ကြိုက်တဲ့ နာမည်နဲ့ component တစ်ခု create လုပ်လိုက်ပါ
-
 
 ```javascript
 //src/components/data-model-crud.vue
