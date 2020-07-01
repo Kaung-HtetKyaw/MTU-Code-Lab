@@ -168,6 +168,7 @@ export default {
   },
   //render function က ေန vnode ေတွparent ကိုေပးရမယ့်အစား parent ရဲ့ v-slotထဲကို slot scopeအ ေနနဲ့ dataေတွmethod ေတွ pass လုပ် ေပးလိုက်ပါ့မယ်
   //ပုံမှန်ဆို render function က h() functionက ေန vnode create လုပ်ပြီး vnode ေတွ return ပြန် ေပးေလ့ ရိုပါတယ်
+  //template ဆိုရင်တော့ vue template compilerကနေ compileလုပ်ပြီးမှ render functionထဲကို vnode createလုပ်မည့် methodတွေထည့်ပေးလေ့ရှိပါတယ်
   render() {
     return this.$scopedSlots.default({
       loading: this.loading,
