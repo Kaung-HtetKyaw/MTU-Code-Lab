@@ -9,7 +9,9 @@
         <Header />
         <ArticleMetaData />
       </div>
-      <Content />
+      <div class="content">
+        <Content />
+      </div>
     </article>
 
     <!-- Related articles. -->
@@ -43,7 +45,7 @@ export default {
     FloatingHeader,
     ArticleMetaData,
 
-    ArticleCard
+    ArticleCard,
   },
   computed: {
     disqusIdentifier() {
@@ -52,12 +54,14 @@ export default {
 
     relatedArticles() {
       const tags = this.$page.frontmatter.tags || [];
-      const relatedArticles = this.$articles.filter(a =>
-        (a.frontmatter.tags || []).some(tag => tags.includes(tag))
+      const relatedArticles = this.$articles.filter((a) =>
+        (a.frontmatter.tags || []).some((tag) => tags.includes(tag))
       );
 
       return randomElements(excludePages(relatedArticles, [this.$page]), 2);
-    }
-  }
+    },
+  },
 };
 </script>
+
+<style lang="css" scoped></style>
