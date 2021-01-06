@@ -3,7 +3,9 @@
     <div class="fixed inset-0 z-40 px-4 overflow-auto" v-if="openned">
       <div class="fixed inset-0 bg-white opacity-90" @click="close"></div>
       <div class="relative mx-auto mt-8 sm:mt-20 mb-16 w-full max-w-xl">
-        <div class="hidden sm:block font-sans text-xl font-bold mb-2">Featured Tags</div>
+        <div class="hidden sm:block font-sans text-xl font-bold mb-2">
+          Featured Tags
+        </div>
         <div class="hidden sm:grid grid-cols-3 gap-4 mb-8">
           <a
             v-for="tag in featuredTags"
@@ -32,7 +34,10 @@
             @keydown.up.prevent="move(-1)"
             @keydown.down.prevent="move(1)"
           />
-          <div class="bg-white border-t border-gray-300 rounded-b-lg p-4" @mouseleave="unfocus">
+          <div
+            class="bg-white border-t border-gray-300 rounded-b-lg p-4"
+            @mouseleave="unfocus"
+          >
             <a
               v-for="(page, index) in suggestions"
               :key="page.key + (page.header ? `_${page.header.slug}` : '')"
@@ -50,7 +55,9 @@
               ></Icon>
               <div :class="index === focused ? 'text-black' : ''">
                 <div v-text="page.searchableTitle"></div>
-                <span v-if="page.header" class="text-sm">&rightarrow;&nbsp;{{ page.header.title }}</span>
+                <span v-if="page.header" class="text-sm"
+                  >&rightarrow;&nbsp;{{ page.header.title }}</span
+                >
               </div>
             </a>
             <div
@@ -73,7 +80,7 @@ export default {
     return {
       openned: false,
       focused: 0,
-      query: ""
+      query: "",
     };
   },
   computed: {
@@ -85,29 +92,33 @@ export default {
       return fetchPagesInArray(this.$site.pages, this.$site.themeConfig.nav);
     },
     featuredTags() {
-      const Javascript = this.$tag.list.find(tag => tag.name === "Javascript");
-      const vueTag = this.$tag.list.find(tag => tag.name === "Vue");
+      const basic = this.$tag.list.find(
+        (tag) => tag.name === "Basic Knowledge"
+      );
+      const programming = this.$tag.list.find(
+        (tag) => tag.name === "Programming"
+      );
       return [
         {
-          name: "Javascript",
-          count: Javascript.pages.length,
-          path: Javascript.path,
-          classes: "bg-banana text-white"
+          name: "Basic Knowledge",
+          count: basic.pages.length,
+          path: basic.path,
+          classes: "bg-banana text-white",
         },
         {
-          name: "Vue",
-          count: vueTag.pages.length,
-          path: vueTag.path,
-          classes: "bg-emerald text-white"
+          name: "Programming",
+          count: programming.pages.length,
+          path: programming.path,
+          classes: "bg-emerald text-white",
         },
         {
           name: "See all tags",
           count: this.$tag.length,
           path: "/tag/",
-          classes: "bg-moonlight text-gray-700"
-        }
+          classes: "bg-moonlight text-gray-700",
+        },
       ];
-    }
+    },
   },
   methods: {
     open() {
@@ -150,10 +161,10 @@ export default {
     },
     unfocus() {
       this.focused = -1;
-    }
+    },
   },
   mounted() {
-    const keyboardHandler = e => {
+    const keyboardHandler = (e) => {
       if (e.key === "/" && !this.openned) {
         e.preventDefault();
         this.open();
@@ -166,7 +177,7 @@ export default {
     this.$once("hook:beforeDestroy", () => {
       document.removeEventListener("keydown", keyboardHandler);
     });
-  }
+  },
 };
 </script>
 <style scoped>
