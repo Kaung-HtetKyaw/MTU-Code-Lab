@@ -43,3 +43,5 @@ Program ကြတော့ အဲ့လိုalgorithm တွေကို machin
 Programming လို့ပြောရင်နောက်မှာ `language` ဆိုတဲ့စကားလုံးပါတယ် `language` ဆိုတာ တစ်ဦးနဲ့တစ်ဦး ဆက်သွယ်ဖို့ကြားခံပေးတဲ့အရာပဲလွယ်လွယ်ပြောရရင် အဲ့တော့ `Programming Language` ဆိုတော့ `program` တွေ ကို machine နဲ့ human ကြားမှာ ဆက်သွယ်ပေးတဲ့အရာပေါ့
 
 Code ဆိုတာကတော့ program တွေကိုmachine ( computer ) ပေါ်မှာရေးတဲ့အခါမှာ သုံးတဲ့စကားလုံး တွေကိုဆိုလိုပြီး coding လို့ပြောရင် program အတွက် code တွေရေးသားမှုကိုခေါ်ဆိုတာပါ
+
+<FacebookButton url="https://web.facebook.com/mtucodelab/?notif_id=1610439758602536&notif_t=page_fan&ref=notif" title="Follow us on Facebook" />

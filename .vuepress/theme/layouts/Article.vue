@@ -64,4 +64,8 @@ export default {
 };
 </script>
 
-<style lang="css" scoped></style>
+<style lang="css" scoped>
+.content {
+  line-height: 2.5;
+}
+</style>
