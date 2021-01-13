@@ -35,18 +35,18 @@ console.log("Hello World");
 Low level language မှာဆိုရင် Assembly နဲ့ဆို
 
 ```
-.386
-.model flat, c
-.stack 100h
-printf PROTO arg1:Ptr Byte
+         .386
+         .model flat, c
+         .stack 100h
+printf   PROTO arg1:Ptr Byte
 .data
-msg1 byte "Hello World!",0Ah,0
-.code
-main proc
-INVOKE printf, ADDR msg1
-ret
-main endp
-end
+msg1     byte "Hello World!",0Ah,0
+         .code
+main     proc
+         INVOKE printf, ADDR msg1
+         ret
+main     endp
+         end
 ```
 
 ဒီလိုရေးရပါတယ်။ အကျဉ်းချုပ်ကတော့ assembly မှာ program တစ်ခုရေးချင်ရင် အပိုင်းလေးတွေပိုင်းရေးရပါတယ်။
