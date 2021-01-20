@@ -1,12 +1,14 @@
 ---
 permalink: programming-coding
-image: https://cutt.ly/bjfHn7Z
+image: /covers/basic-knowledge-1.png
 description: Code lab ရဲ့ 2021 အတွက် ပထမဆုံး sharing ကတော့  အခြေခံသိသင့်တဲ့ knowledge တွေထဲက programming      နဲ့coding အကြောင်းလေးပဲဖြစ်ပါတယ်။
 tags: ["Basic Knowledge", "Programming"]
 date: 2021-01-05T19:54:00+6:30
 ---
 
 # Programming ဆိုတာဘာလဲ ?
+
+![cover](/covers/basic-knowledge-1.png)
 
 **Programming** လိုပြောရင် အရင်ဆုံး **program** ဆိုတာဘာလဲဆိုတာကိုအရင်သိမှရမယ်
 
