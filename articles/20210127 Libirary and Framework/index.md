@@ -1,5 +1,5 @@
 ---
-permalink: programming-coding
+permalink: library-and-framework
 image: /covers/library-and-framework.png
 description: သက်ဆိုင်ရာ development အလိုက် အသုံးပြုရတဲ့ language တွေကိုသိပြီးသွားတဲ့နောက်မှာ ဒီတစ်ပတ်ကတော့ programming language တွေရဲ့ library နဲ့ framework တွေအကြောင်းကို ရှင်းပြပေးသွားမှာဖြစ်ပါတယ်။
 tags: ["Basic Knowledge", "Programming"]
